@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163878036-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-163878036-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="likelion at duksung women's university">
+    <meta name="keywords" content="likelion, DSWU, 덕성여대">
+    <meta name="author" content="duksunglions">
+    <title>덕성멋사</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nobile:wght@500;700&family=Noto+Sans+KR&family=Raleway&display=swap" rel="stylesheet">
+    <style>
+
+
+
+        @font-face {
+            font-family: 'karmatic';
+            src: url({% static 'fonts/ka1.ttf' %});
+                format('truetype');
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .headline {
+            font-family: "karmatic", sans-serif;
+            color: #8a8d8f;
+            padding-top: 5vh;
+            font-style: italic;
+            font-size: 9vw;
+            text-align: center;
+        }
+
+
+        footer {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Raleway', sans-serif;
+            font-size: 3vw;
+            padding: 10vh 2vw 2vh 2vw;
+            margin-top: 1vh;
+            color: #8a8d8f;
+            opacity: 0.5;
+            line-height: 0.5;
+        }
+    {% block styles %}
+    {% endblock styles %}
+    
+        /* media query for tablets and pcs */
+        @media screen and (min-width: 768px) and (max-width: 2013px) {
+            .default {
+                width: 70vw;
+                margin: auto;
+            }
+
+            .headline {
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .default {
+                width: 50vw;
+                height: 50vh;
+                margin: auto;
+            }
+
+            footer {
+                font-size: 0.5rem;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<header>
+</header>
+
+<main>
+    {% block content %}
+    {% endblock content %}
+</main>
+
+<footer class='info'>
+    <p>Copyright 2020. 멋쟁이사자처럼 덕성여자대학교. All rights reserved.</p>
+    <p onclick='location.href="https://github.com/eunjungleo/super-duper-octo-bassoon/tree/deploy_v1"'><u>github source</u></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+
+    .row {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        margin: 5vh 0 0 0;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .card {
+        background-color: transparent;
+    }
+
+    .profile {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+
+    }
+    .name {
+        font-family: 'karmatic';
+        color: #F39926;
+        font-style: italic;
+        font-size: 6vw;
+
+    }
+
+    .role {
+        color: #ffffff;
+        opacity: 0.8;
+    }
+
+    
+{% endblock styles %}
+
+{% block content %}
+<div class='container default' style='text-align: center;'>
+    <h1 class='headline'>TUTORS</h1>
+    <div class='card row' style='flex-direction: row'>
+        <div class='col'>
+            <img class='profile' src='{% static "img/pic1.png" %}' alt='profilepic'>
+        </div>
+        <div class='col'>
+            <p class='name'>suji</p>
+            <p class='role'>PRESIDENT</p>
+        </div>
+    </div>
+    <div class='card row' style='flex-direction: row'>
+        <div class='col'>
+            <img class='profile' src='{% static "img/pic2.png" %}' alt='profilepic'>
+        </div>
+        <div class='col'>
+            <p class='name'>Taerim</p>
+            <p class='role'>General Affairs</p>
+        </div>
+    </div>
+    <div class='card row' style='flex-direction: row'>
+        <div class='col'>
+            <img class='profile' src='{% static "img/pic3.png" %}' alt='profilepic'>
+        </div>
+        <div class='col'>
+            <p class='name'>Yejin</p>
+            <p class='role'>Management</p>
+        </div>
+    </div>
+    <div class='card row' style='flex-direction: row'>
+        <div class='col'>
+            <img class='profile' src='{% static "img/pic4.png" %}' alt='profilepic'>
+        </div>
+        <div class='col'>
+            <p class='name'>Jessi</p>
+            <p class='role'>VP, Promotion</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+
+.head {
+    font-size: 7vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba( 255, 255, 255, 0.1 );
+    width: 100%;
+    height: 60vh;
+    left: 0;
+    padding: 0;
+
+}
+
+.description {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ffffff;
+}
+
+.d-block.w-100 {
+    width: 90vw;
+    height: 60vh;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.carousel-indicators {
+    margin: 0;
+    padding: 0;
+}
+
+{% endblock styles %}
+
+{% block content %}
+
+<div class='container'>
+    <h1 class='headline'>milestone</h1>
+    <br/>
+    <br/>
+</div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'img/carousel1.png' %}" alt="First slide">
+                <div class='carousel-caption overlay'>
+                    <p class='head'>2020 신규회원 선발</p>
+                    <p class='description'>역대 최다인원 지원, 최고 경쟁률 기록<br/>(16명 선발, 77명 지원)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/carousel2.jpg' %}" alt="Second slide">
+                <div class='carousel-caption overlay'>
+                    <p class='head'>2019 아이디어톤 1,2위</p>
+                    <p class='description'>상위 22개 팀 온라인 사전선발 통과 + 아이디어 피칭 심사</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/carousel3.jpg' %}" alt="Third slide">
+                <div class='carousel-caption overlay'>
+                    <p class='head'>2020 해커톤 3, 4위</p>
+                    <p class='description'>AWS 한국 대표 상, 베스트 서비스상 수상</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/girlshack.png' %}" alt="Fourth slide">
+                <div class='carousel-caption overlay'>
+                    <p class='head'>2019 여기톤</p>
+                    <p class='description'>여대 연합 아이디어톤+해커톤 기획(7기 운영진),참가</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/carousel4.jpg' %}" alt="Fifth slide">
+                <div class='carousel-caption overlay'>
+                    <p class='head'>백일화 페이지 개발, 수익사업</p>
+                    <p class='description'>2019 덕성여대 축제 '백일화' 사이트 제작 (7기 운영진), 수익사업 진행</p>
+                </div>
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+    </div>
+
+{% endblock content %}
