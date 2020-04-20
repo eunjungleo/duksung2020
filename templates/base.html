@@ -20,16 +20,58 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nobile:wght@500;700&family=Noto+Sans+KR&family=Raleway&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'karmatic';
             src: url({% static 'fonts/ka1.ttf' %});
                 format('truetype');
         }
+
+        .headline {
+            font-family: "karmatic", sans-serif;
+            color: #8a8d8f;
+            padding-top: 5vh;
+            font-style: italic;
+            font-size: 9vw;
+            text-align: center;
+        }
+
+        footer {
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Raleway', sans-serif;
+            font-size: 3vw;
+            padding: 2vh 0 2vh 0;
+            color: #8a8d8f;
+            opacity: 0.5;
+        }
+
+        footer > p {
+            line-height: 1;
+            margin: 0.5vh;
+        }
+
+        {% block styles %}
+        {% endblock styles %}
     </style>
 </head>
-<body style='background-color: #000000; width: 100vw; height: 100vh; overflow-x: hidden; overflow-y: hidden;'>
+<body style='background-color: #000000; min-height: 100vh; overflow-x: hidden;'>
+
+<header>
+</header>
+
+<main style='min-height: 100vh;'>
     {% block content %}
     {% endblock content %}
+</main>
+
+<footer class='info'>
+    <p>Copyright 2020. 멋쟁이사자처럼 덕성여자대학교. All rights reserved.</p>
+    <p>public relations: asaprocky123@likelion.org</p>
+</footer>
 </body>
 </html>

@@ -4,3 +4,9 @@ from django.shortcuts import render
 def main(request):
     return render(request, 'main.html')
     
+def people(request):
+    return render(request, 'people.html')
+
+def sns(request):
+    return render(request, 'sns.html')
+    
