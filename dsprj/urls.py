@@ -19,6 +19,8 @@ from dsapp import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.main),
+    path('wtf/', admin.site.urls),
+    path('', views.main, name='main'),
+    path('people/', views.people, name='people'),
+    path('sns/', views.sns, name='sns')
 ]
