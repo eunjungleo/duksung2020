@@ -10,3 +10,5 @@ def people(request):
 def sns(request):
     return render(request, 'sns.html')
     
+def milestone(request):
+    return render(request, 'milestone.html')

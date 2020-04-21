@@ -15,6 +15,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 50%;
     }
 
     .card {
@@ -24,7 +25,7 @@
     .profile {
         width: 100%;
         height: auto;
-        object-fit: scale-down;
+        object-fit: contain;
 
     }
     .name {
@@ -44,7 +45,7 @@
 {% endblock styles %}
 
 {% block content %}
-<div class='container' style='text-align: center;'>
+<div class='container default' style='text-align: center;'>
     <h1 class='headline'>TUTORS</h1>
     <div class='card row' style='flex-direction: row'>
         <div class='col'>
