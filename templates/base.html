@@ -22,10 +22,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nobile:wght@500;700&family=Noto+Sans+KR&family=Raleway&display=swap" rel="stylesheet">
     <style>
+
+
+
         @font-face {
             font-family: 'karmatic';
             src: url({% static 'fonts/ka1.ttf' %});
                 format('truetype');
+        }
+
+        body {
+            background-color: #000000;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .headline {
@@ -37,34 +46,64 @@
             text-align: center;
         }
 
+
         footer {
-            height: 10%;
+            height: 10vh;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             font-family: 'Raleway', sans-serif;
             font-size: 3vw;
-            padding: 2vh 0 2vh 0;
+            padding: 10vh 2vw 2vh 2vw;
+            margin-top: 1vh;
             color: #8a8d8f;
             opacity: 0.5;
+            line-height: 0.5;
+        }
+    {% block styles %}
+    {% endblock styles %}
+    
+        /* media query for tablets and pcs */
+        @media screen and (min-width: 768px) and (max-width: 2013px) {
+            .default {
+                width: 70vw;
+                margin: auto;
+            }
+
+            .headline {
+                font-size: 5vw;
+                text-align: center;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .default {
+                width: 50vw;
+                height: 50vh;
+                margin: auto;
+            }
+
+            footer {
+                font-size: 0.5rem;
+            }
+
+
         }
 
-        footer > p {
-            line-height: 1;
-            margin: 0.5vh;
-        }
-
-        {% block styles %}
-        {% endblock styles %}
     </style>
 </head>
-<body style='background-color: #000000; min-height: 100vh; overflow-x: hidden;'>
+
+
+<body>
 
 <header>
 </header>
 
-<main style='min-height: 100vh;'>
+<main>
     {% block content %}
     {% endblock content %}
 </main>

@@ -22,5 +22,10 @@ urlpatterns = [
     path('wtf/', admin.site.urls),
     path('', views.main, name='main'),
     path('people/', views.people, name='people'),
+<<<<<<< HEAD
     path('sns/', views.sns, name='sns')
+=======
+    path('sns/', views.sns, name='sns'),
+    path('milestone/', views.milestone, name='milestone')
+>>>>>>> deploy_v1
 ]
