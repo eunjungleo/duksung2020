@@ -5,7 +5,7 @@
 
 ### v 1.0
 - 모바일 우선, media query 있지만 PC에서 모양 안예쁨
-- Apr 21st 2020 배포 :  on AWS (EC2 Autoscaling group, Route53)
+- Apr 22nd 2020 배포 :  on AWS (EC2 Autoscaling group, Route53)
 - project: dsprj / app: dsapp
 - google analytics 추적 코드
 - branch: deploy_v1
