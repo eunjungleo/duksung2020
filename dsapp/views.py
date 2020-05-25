@@ -9,10 +9,6 @@ def people(request):
 
 def sns(request):
     return render(request, 'sns.html')
-<<<<<<< HEAD
-    
-=======
     
 def milestone(request):
     return render(request, 'milestone.html')
->>>>>>> deploy_v1
