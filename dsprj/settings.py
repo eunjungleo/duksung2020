@@ -27,7 +27,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'ds2020-env.eba-vvu4mtsx.us-west-2.elasticbeanstalk.com',
-    ]
+    'ec2-54-218-25-125.us-west-2.compute.amazonaws.com',
+    '54.218.25.125',
+    'ec2-54-218-25-125.us-west-2.compute.amazonaws.com',
+]
 
 
 # Application definition
