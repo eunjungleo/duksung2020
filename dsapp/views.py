@@ -13,8 +13,3 @@ def sns(request):
 def milestone(request):
     return render(request, 'milestone.html')
 
-def error404(request):
-    return render(request, "404.html", status=404)
-
-def error500(request):
-    return render(request, "404.html", status=500)

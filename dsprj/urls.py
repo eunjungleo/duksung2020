@@ -17,11 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from dsapp import views
 from django.conf.urls.static import static
-from django.conf.urls import handler404, handler500
 
-
-handler404 = "dsapp.views.error404"
-handler500 = "dsapp.views.error500"
 
 
 urlpatterns = [
