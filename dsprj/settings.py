@@ -27,7 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'ds2020-env.eba-vvu4mtsx.us-west-2.elasticbeanstalk.com',
-    
+    'likelion.pride1920.org',
+    'pride1920.org',
 ]
 
 
