@@ -1,16 +1,13 @@
 # 2020 덕성여대 멋쟁이사자처럼 페이지
 
-### https://www.duksung-pride.xyz
+### https://likelion.pride1920.org
 <br/>
 
 ### v 1.0
 - 모바일 우선, media query 있지만 PC에서 모양 안예쁨
-- May 25th 2020 배포 :  on AWS (EC2 Autoscaling group, Route53)
-- project: dsprj / app: dsapp
 - google analytics 추적 코드
 - branch: deploy_v1
 - Eunjung Lee
-- Build: Django v3.0.5
 
 <br/>
 <br/>
